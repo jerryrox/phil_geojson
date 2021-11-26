@@ -2,7 +2,7 @@ import regionsJson from "./0_region/regions.0.01.json";
 import fs from "fs";
 import path from "path";
 
-const isPrettyPrint = true;
+const isPrettyPrint = false;
 const extractionFolders = {
     region: "extracted_0_region",
     province: "extracted_1_province",
@@ -28,7 +28,6 @@ function getHostedUrl(folderName, fileName) {
 }
 
 function extractRegions() {
-    const folderName = extractionFolders.region;
     const properties = [];
     let geoJsonFileName = "";
 
@@ -44,6 +43,7 @@ function extractRegions() {
             id,
             countryId,
         };
+        geoJsonFileName = countryId;
 
         if (name === undefined) {
             console.log("Empty name for property", prop);
@@ -58,22 +58,20 @@ function extractRegions() {
             continue;
         }
 
-        geoJsonFileName = countryId;
         properties.push({
             id,
             countryId,
             name,
             altName,
-            geojsonUrl: getHostedUrl(folderName, geoJsonFileName),
+            geojsonUrl: getHostedUrl(extractionFolders.province, id),
         });
     }
 
-    saveEditedGeoJson(folderName, geoJsonFileName, regionsJson);
-    saveExtractedProperties(folderName, regionsJson, properties);
+    saveEditedGeoJson(extractionFolders.region, geoJsonFileName, regionsJson);
+    saveExtractedProperties(extractionFolders.region, properties);
 }
 
 function extractProvinces() {
-    const folderName = extractionFolders.province;
     const dir = "./1_provinces";
     const provinceFiles = fs.readdirSync(dir);
     const properties = [];
@@ -95,6 +93,7 @@ function extractProvinces() {
             const countryId = prop.ADM0_PCODE;
             const regionId = prop.ADM1_PCODE;
 
+            geoJsonFileName = regionId;
             feature.properties = {
                 id,
                 countryId,
@@ -118,25 +117,23 @@ function extractProvinces() {
                 continue;
             }
 
-            geoJsonFileName = regionId;
             properties.push({
                 id,
                 countryId,
                 regionId,
                 name,
                 altName,
-                geojsonUrl: getHostedUrl(folderName, geoJsonFileName),
+                geojsonUrl: getHostedUrl(extractionFolders.municity, id),
             });
         }
 
-        saveEditedGeoJson(folderName, geoJsonFileName, provincesJson);
+        saveEditedGeoJson(extractionFolders.province, geoJsonFileName, provincesJson);
     }
 
-    saveExtractedProperties(folderName, properties);
+    saveExtractedProperties(extractionFolders.province, properties);
 }
 
 function extractMunicities() {
-    const folderName = extractionFolders.municity;
     const dir = "./2_municities";
     const municityFiles = fs.readdirSync(dir);
     const properties = [];
@@ -159,6 +156,7 @@ function extractMunicities() {
             const regionId = prop.ADM1_PCODE;
             const provinceId = prop.ADM2_PCODE;
 
+            geoJsonFileName = provinceId;
             feature.properties = {
                 id,
                 countryId,
@@ -198,10 +196,10 @@ function extractMunicities() {
             });
         }
 
-        saveEditedGeoJson(folderName, municitiesJson.features[0].properties.provinceId, municitiesJson);
+        saveEditedGeoJson(extractionFolders.municity, geoJsonFileName, municitiesJson);
     }
 
-    saveExtractedProperties(folderName, properties);
+    saveExtractedProperties(extractionFolders.municity, properties);
 }
 
 extractRegions();
