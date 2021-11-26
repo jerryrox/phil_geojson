@@ -1,0 +1,14 @@
+{
+  "name": "phil_geojson",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "extractor": "node --experimental-json-modules extractor.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
