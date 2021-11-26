@@ -1,0 +1,698 @@
+[
+  {
+    "id": "PH012800000",
+    "countryId": "PH",
+    "regionId": "PH010000000",
+    "name": "Ilocos Norte",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH010000000.json"
+  },
+  {
+    "id": "PH012900000",
+    "countryId": "PH",
+    "regionId": "PH010000000",
+    "name": "Ilocos Sur",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH010000000.json"
+  },
+  {
+    "id": "PH013300000",
+    "countryId": "PH",
+    "regionId": "PH010000000",
+    "name": "La Union",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH010000000.json"
+  },
+  {
+    "id": "PH015500000",
+    "countryId": "PH",
+    "regionId": "PH010000000",
+    "name": "Pangasinan",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH010000000.json"
+  },
+  {
+    "id": "PH020900000",
+    "countryId": "PH",
+    "regionId": "PH020000000",
+    "name": "Batanes",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH020000000.json"
+  },
+  {
+    "id": "PH021500000",
+    "countryId": "PH",
+    "regionId": "PH020000000",
+    "name": "Cagayan",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH020000000.json"
+  },
+  {
+    "id": "PH023100000",
+    "countryId": "PH",
+    "regionId": "PH020000000",
+    "name": "Isabela",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH020000000.json"
+  },
+  {
+    "id": "PH025000000",
+    "countryId": "PH",
+    "regionId": "PH020000000",
+    "name": "Nueva Vizcaya",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH020000000.json"
+  },
+  {
+    "id": "PH025700000",
+    "countryId": "PH",
+    "regionId": "PH020000000",
+    "name": "Quirino",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH020000000.json"
+  },
+  {
+    "id": "PH037700000",
+    "countryId": "PH",
+    "regionId": "PH030000000",
+    "name": "Aurora",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH030000000.json"
+  },
+  {
+    "id": "PH030800000",
+    "countryId": "PH",
+    "regionId": "PH030000000",
+    "name": "Bataan",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH030000000.json"
+  },
+  {
+    "id": "PH031400000",
+    "countryId": "PH",
+    "regionId": "PH030000000",
+    "name": "Bulacan",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH030000000.json"
+  },
+  {
+    "id": "PH034900000",
+    "countryId": "PH",
+    "regionId": "PH030000000",
+    "name": "Nueva Ecija",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH030000000.json"
+  },
+  {
+    "id": "PH035400000",
+    "countryId": "PH",
+    "regionId": "PH030000000",
+    "name": "Pampanga",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH030000000.json"
+  },
+  {
+    "id": "PH036900000",
+    "countryId": "PH",
+    "regionId": "PH030000000",
+    "name": "Tarlac",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH030000000.json"
+  },
+  {
+    "id": "PH037100000",
+    "countryId": "PH",
+    "regionId": "PH030000000",
+    "name": "Zambales",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH030000000.json"
+  },
+  {
+    "id": "PH041000000",
+    "countryId": "PH",
+    "regionId": "PH040000000",
+    "name": "Batangas",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH040000000.json"
+  },
+  {
+    "id": "PH042100000",
+    "countryId": "PH",
+    "regionId": "PH040000000",
+    "name": "Cavite",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH040000000.json"
+  },
+  {
+    "id": "PH043400000",
+    "countryId": "PH",
+    "regionId": "PH040000000",
+    "name": "Laguna",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH040000000.json"
+  },
+  {
+    "id": "PH045600000",
+    "countryId": "PH",
+    "regionId": "PH040000000",
+    "name": "Quezon",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH040000000.json"
+  },
+  {
+    "id": "PH045800000",
+    "countryId": "PH",
+    "regionId": "PH040000000",
+    "name": "Rizal",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH040000000.json"
+  },
+  {
+    "id": "PH050500000",
+    "countryId": "PH",
+    "regionId": "PH050000000",
+    "name": "Albay",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH050000000.json"
+  },
+  {
+    "id": "PH051600000",
+    "countryId": "PH",
+    "regionId": "PH050000000",
+    "name": "Camarines Norte",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH050000000.json"
+  },
+  {
+    "id": "PH051700000",
+    "countryId": "PH",
+    "regionId": "PH050000000",
+    "name": "Camarines Sur",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH050000000.json"
+  },
+  {
+    "id": "PH052000000",
+    "countryId": "PH",
+    "regionId": "PH050000000",
+    "name": "Catanduanes",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH050000000.json"
+  },
+  {
+    "id": "PH054100000",
+    "countryId": "PH",
+    "regionId": "PH050000000",
+    "name": "Masbate",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH050000000.json"
+  },
+  {
+    "id": "PH056200000",
+    "countryId": "PH",
+    "regionId": "PH050000000",
+    "name": "Sorsogon",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH050000000.json"
+  },
+  {
+    "id": "PH060400000",
+    "countryId": "PH",
+    "regionId": "PH060000000",
+    "name": "Aklan",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH060000000.json"
+  },
+  {
+    "id": "PH060600000",
+    "countryId": "PH",
+    "regionId": "PH060000000",
+    "name": "Antique",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH060000000.json"
+  },
+  {
+    "id": "PH061900000",
+    "countryId": "PH",
+    "regionId": "PH060000000",
+    "name": "Capiz",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH060000000.json"
+  },
+  {
+    "id": "PH067900000",
+    "countryId": "PH",
+    "regionId": "PH060000000",
+    "name": "Guimaras",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH060000000.json"
+  },
+  {
+    "id": "PH063000000",
+    "countryId": "PH",
+    "regionId": "PH060000000",
+    "name": "Iloilo",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH060000000.json"
+  },
+  {
+    "id": "PH071200000",
+    "countryId": "PH",
+    "regionId": "PH070000000",
+    "name": "Bohol",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH070000000.json"
+  },
+  {
+    "id": "PH072200000",
+    "countryId": "PH",
+    "regionId": "PH070000000",
+    "name": "Cebu",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH070000000.json"
+  },
+  {
+    "id": "PH076100000",
+    "countryId": "PH",
+    "regionId": "PH070000000",
+    "name": "Siquijor",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH070000000.json"
+  },
+  {
+    "id": "PH087800000",
+    "countryId": "PH",
+    "regionId": "PH080000000",
+    "name": "Biliran",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH080000000.json"
+  },
+  {
+    "id": "PH082600000",
+    "countryId": "PH",
+    "regionId": "PH080000000",
+    "name": "Eastern Samar",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH080000000.json"
+  },
+  {
+    "id": "PH083700000",
+    "countryId": "PH",
+    "regionId": "PH080000000",
+    "name": "Leyte",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH080000000.json"
+  },
+  {
+    "id": "PH084800000",
+    "countryId": "PH",
+    "regionId": "PH080000000",
+    "name": "Northern Samar",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH080000000.json"
+  },
+  {
+    "id": "PH086000000",
+    "countryId": "PH",
+    "regionId": "PH080000000",
+    "name": "Samar",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH080000000.json"
+  },
+  {
+    "id": "PH086400000",
+    "countryId": "PH",
+    "regionId": "PH080000000",
+    "name": "Southern Leyte",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH080000000.json"
+  },
+  {
+    "id": "PH099700000",
+    "countryId": "PH",
+    "regionId": "PH090000000",
+    "name": "City of Isabela",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH090000000.json"
+  },
+  {
+    "id": "PH097200000",
+    "countryId": "PH",
+    "regionId": "PH090000000",
+    "name": "Zamboanga del Norte",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH090000000.json"
+  },
+  {
+    "id": "PH097300000",
+    "countryId": "PH",
+    "regionId": "PH090000000",
+    "name": "Zamboanga del Sur",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH090000000.json"
+  },
+  {
+    "id": "PH098300000",
+    "countryId": "PH",
+    "regionId": "PH090000000",
+    "name": "Zamboanga Sibugay",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH090000000.json"
+  },
+  {
+    "id": "PH101300000",
+    "countryId": "PH",
+    "regionId": "PH100000000",
+    "name": "Bukidnon",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH100000000.json"
+  },
+  {
+    "id": "PH101800000",
+    "countryId": "PH",
+    "regionId": "PH100000000",
+    "name": "Camiguin",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH100000000.json"
+  },
+  {
+    "id": "PH103500000",
+    "countryId": "PH",
+    "regionId": "PH100000000",
+    "name": "Lanao del Norte",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH100000000.json"
+  },
+  {
+    "id": "PH104200000",
+    "countryId": "PH",
+    "regionId": "PH100000000",
+    "name": "Misamis Occidental",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH100000000.json"
+  },
+  {
+    "id": "PH104300000",
+    "countryId": "PH",
+    "regionId": "PH100000000",
+    "name": "Misamis Oriental",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH100000000.json"
+  },
+  {
+    "id": "PH118200000",
+    "countryId": "PH",
+    "regionId": "PH110000000",
+    "name": "Compostela Valley",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH110000000.json"
+  },
+  {
+    "id": "PH112300000",
+    "countryId": "PH",
+    "regionId": "PH110000000",
+    "name": "Davao del Norte",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH110000000.json"
+  },
+  {
+    "id": "PH112400000",
+    "countryId": "PH",
+    "regionId": "PH110000000",
+    "name": "Davao del Sur",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH110000000.json"
+  },
+  {
+    "id": "PH118600000",
+    "countryId": "PH",
+    "regionId": "PH110000000",
+    "name": "Davao Occidental",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH110000000.json"
+  },
+  {
+    "id": "PH112500000",
+    "countryId": "PH",
+    "regionId": "PH110000000",
+    "name": "Davao Oriental",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH110000000.json"
+  },
+  {
+    "id": "PH124700000",
+    "countryId": "PH",
+    "regionId": "PH120000000",
+    "name": "Cotabato",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH120000000.json"
+  },
+  {
+    "id": "PH129800000",
+    "countryId": "PH",
+    "regionId": "PH120000000",
+    "name": "Cotabato City",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH120000000.json"
+  },
+  {
+    "id": "PH128000000",
+    "countryId": "PH",
+    "regionId": "PH120000000",
+    "name": "Sarangani",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH120000000.json"
+  },
+  {
+    "id": "PH126300000",
+    "countryId": "PH",
+    "regionId": "PH120000000",
+    "name": "South Cotabato",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH120000000.json"
+  },
+  {
+    "id": "PH126500000",
+    "countryId": "PH",
+    "regionId": "PH120000000",
+    "name": "Sultan Kudarat",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH120000000.json"
+  },
+  {
+    "id": "PH133900000",
+    "countryId": "PH",
+    "regionId": "PH130000000",
+    "name": "NCR, City of Manila, First District",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH130000000.json"
+  },
+  {
+    "id": "PH137600000",
+    "countryId": "PH",
+    "regionId": "PH130000000",
+    "name": "NCR, Fourth District",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH130000000.json"
+  },
+  {
+    "id": "PH137400000",
+    "countryId": "PH",
+    "regionId": "PH130000000",
+    "name": "NCR, Second District",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH130000000.json"
+  },
+  {
+    "id": "PH137500000",
+    "countryId": "PH",
+    "regionId": "PH130000000",
+    "name": "NCR, Third District",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH130000000.json"
+  },
+  {
+    "id": "PH140100000",
+    "countryId": "PH",
+    "regionId": "PH140000000",
+    "name": "Abra",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH140000000.json"
+  },
+  {
+    "id": "PH148100000",
+    "countryId": "PH",
+    "regionId": "PH140000000",
+    "name": "Apayao",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH140000000.json"
+  },
+  {
+    "id": "PH141100000",
+    "countryId": "PH",
+    "regionId": "PH140000000",
+    "name": "Benguet",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH140000000.json"
+  },
+  {
+    "id": "PH142700000",
+    "countryId": "PH",
+    "regionId": "PH140000000",
+    "name": "Ifugao",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH140000000.json"
+  },
+  {
+    "id": "PH143200000",
+    "countryId": "PH",
+    "regionId": "PH140000000",
+    "name": "Kalinga",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH140000000.json"
+  },
+  {
+    "id": "PH144400000",
+    "countryId": "PH",
+    "regionId": "PH140000000",
+    "name": "Mountain Province",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH140000000.json"
+  },
+  {
+    "id": "PH150700000",
+    "countryId": "PH",
+    "regionId": "PH150000000",
+    "name": "Basilan",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH150000000.json"
+  },
+  {
+    "id": "PH153600000",
+    "countryId": "PH",
+    "regionId": "PH150000000",
+    "name": "Lanao del Sur",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH150000000.json"
+  },
+  {
+    "id": "PH153800000",
+    "countryId": "PH",
+    "regionId": "PH150000000",
+    "name": "Maguindanao",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH150000000.json"
+  },
+  {
+    "id": "PH156600000",
+    "countryId": "PH",
+    "regionId": "PH150000000",
+    "name": "Sulu",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH150000000.json"
+  },
+  {
+    "id": "PH157000000",
+    "countryId": "PH",
+    "regionId": "PH150000000",
+    "name": "Tawi-Tawi",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH150000000.json"
+  },
+  {
+    "id": "PH160200000",
+    "countryId": "PH",
+    "regionId": "PH160000000",
+    "name": "Agusan del Norte",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH160000000.json"
+  },
+  {
+    "id": "PH160300000",
+    "countryId": "PH",
+    "regionId": "PH160000000",
+    "name": "Agusan del Sur",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH160000000.json"
+  },
+  {
+    "id": "PH168500000",
+    "countryId": "PH",
+    "regionId": "PH160000000",
+    "name": "Dinagat Islands",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH160000000.json"
+  },
+  {
+    "id": "PH166700000",
+    "countryId": "PH",
+    "regionId": "PH160000000",
+    "name": "Surigao del Norte",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH160000000.json"
+  },
+  {
+    "id": "PH166800000",
+    "countryId": "PH",
+    "regionId": "PH160000000",
+    "name": "Surigao del Sur",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH160000000.json"
+  },
+  {
+    "id": "PH174000000",
+    "countryId": "PH",
+    "regionId": "PH170000000",
+    "name": "Marinduque",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH170000000.json"
+  },
+  {
+    "id": "PH175100000",
+    "countryId": "PH",
+    "regionId": "PH170000000",
+    "name": "Occidental Mindoro",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH170000000.json"
+  },
+  {
+    "id": "PH175200000",
+    "countryId": "PH",
+    "regionId": "PH170000000",
+    "name": "Oriental Mindoro",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH170000000.json"
+  },
+  {
+    "id": "PH175300000",
+    "countryId": "PH",
+    "regionId": "PH170000000",
+    "name": "Palawan",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH170000000.json"
+  },
+  {
+    "id": "PH175900000",
+    "countryId": "PH",
+    "regionId": "PH170000000",
+    "name": "Romblon",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH170000000.json"
+  },
+  {
+    "id": "PH184500000",
+    "countryId": "PH",
+    "regionId": "PH180000000",
+    "name": "Negros Occidental",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH180000000.json"
+  },
+  {
+    "id": "PH184600000",
+    "countryId": "PH",
+    "regionId": "PH180000000",
+    "name": "Negros Oriental",
+    "altName": "",
+    "geojsonUrl": "https://raw.githubusercontent.com/jerryrox/phil_geojson/master/extracted_1_province/PH180000000.json"
+  }
+]

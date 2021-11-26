@@ -3,6 +3,11 @@ import fs from "fs";
 import path from "path";
 
 const isPrettyPrint = true;
+const extractionFolders = {
+    region: "extracted_0_region",
+    province: "extracted_1_province",
+    municity: "extracted_2_municity",
+};
 
 async function saveEditedGeoJson(folderName, fileName, geoData) {
     if(!fs.existsSync(folderName))
@@ -18,8 +23,14 @@ async function saveExtractedProperties(folderName, properties) {
     fs.writeFile(propertiesPath, JSON.stringify(properties, undefined, isPrettyPrint ? "  " : undefined), () => { });
 }
 
+function getHostedUrl(folderName, fileName) {
+    return `https://raw.githubusercontent.com/jerryrox/phil_geojson/master/${folderName}/${fileName}.json`;
+}
+
 function extractRegions() {
+    const folderName = extractionFolders.region;
     const properties = [];
+    let geoJsonFileName = "";
 
     for (const feature of regionsJson.features) {
         const prop = feature.properties;
@@ -46,20 +57,23 @@ function extractRegions() {
             console.log("Empty countryId for property", prop);
             continue;
         }
+
+        geoJsonFileName = countryId;
         properties.push({
             id,
             countryId,
             name,
             altName,
-            geojsonUrl: `https://raw.githubusercontent.com/faeldon/philippines-json-maps/master/geojson/provinces/medres/provinces-region-${id}.0.01.json`,
+            geojsonUrl: getHostedUrl(folderName, geoJsonFileName),
         });
     }
 
-    saveEditedGeoJson("extracted_0_region", regionsJson.features[0].properties.countryId, regionsJson);
-    saveExtractedProperties("extracted_0_region", regionsJson, properties);
+    saveEditedGeoJson(folderName, geoJsonFileName, regionsJson);
+    saveExtractedProperties(folderName, regionsJson, properties);
 }
 
 function extractProvinces() {
+    const folderName = extractionFolders.province;
     const dir = "./1_provinces";
     const provinceFiles = fs.readdirSync(dir);
     const properties = [];
@@ -70,6 +84,7 @@ function extractProvinces() {
         }   
         const rawData = fs.readFileSync(path.join(dir, file));
         const provincesJson = JSON.parse(rawData);
+        let geoJsonFileName = "";
 
         for (const feature of provincesJson.features) {
             const prop = feature.properties;
@@ -102,23 +117,26 @@ function extractProvinces() {
                 console.log("Empty regionId for property", prop);
                 continue;
             }
+
+            geoJsonFileName = regionId;
             properties.push({
                 id,
                 countryId,
                 regionId,
                 name,
                 altName,
-                geojsonUrl: `https://raw.githubusercontent.com/faeldon/philippines-json-maps/master/geojson/municties/medres/municities-province-${id}.0.01.json`,
+                geojsonUrl: getHostedUrl(folderName, geoJsonFileName),
             });
         }
 
-        saveEditedGeoJson("extracted_1_provinces", provincesJson.features[0].properties.regionId, provincesJson);
+        saveEditedGeoJson(folderName, geoJsonFileName, provincesJson);
     }
 
-    saveExtractedProperties("extracted_1_provinces", properties);
+    saveExtractedProperties(folderName, properties);
 }
 
 function extractMunicities() {
+    const folderName = extractionFolders.municity;
     const dir = "./2_municities";
     const municityFiles = fs.readdirSync(dir);
     const properties = [];
@@ -129,6 +147,7 @@ function extractMunicities() {
         }   
         const rawData = fs.readFileSync(path.join(dir, file));
         const municitiesJson = JSON.parse(rawData);
+        let geoJsonFileName = "";
 
         for (const feature of municitiesJson.features) {
             const prop = feature.properties;
@@ -167,6 +186,8 @@ function extractMunicities() {
                 console.log("Empty provinceId for property", prop);
                 continue;
             }
+
+            geoJsonFileName = provinceId;
             properties.push({
                 id,
                 countryId,
@@ -177,10 +198,10 @@ function extractMunicities() {
             });
         }
 
-        saveEditedGeoJson("extracted_2_municities", municitiesJson.features[0].properties.provinceId, municitiesJson);
+        saveEditedGeoJson(folderName, municitiesJson.features[0].properties.provinceId, municitiesJson);
     }
 
-    saveExtractedProperties("extracted_2_municities", properties);
+    saveExtractedProperties(folderName, properties);
 }
 
 extractRegions();
