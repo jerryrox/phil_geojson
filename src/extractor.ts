@@ -90,7 +90,7 @@ function extract(
     propFileName: string,
     extractProperties: (feature: any) => any,
     getFeatureGeojsonName: (properties: any) => string,
-    getNewSourceGeojsonName?: (allProperties: any) => string,
+    getNewSourceGeojsonName?: (properties: any) => string,
 ) {
     const allProperties: Record<string, any>[] = [];
 
@@ -98,20 +98,21 @@ function extract(
         const rawData = fs.readFileSync(file);
         const sourceJson = JSON.parse(rawData.toString());
 
+        let extractedProperties: any;
         for (const feature of sourceJson.features) {
-            const extractedProps = extractProperties(feature);
-            for (const key of Object.keys(extractedProps)) {
-                if (extractedProps[key] === undefined) {
+            extractedProperties = extractProperties(feature);
+            for (const key of Object.keys(extractedProperties)) {
+                if (extractedProperties[key] === undefined) {
                     throw new Error("Undefined value for property key: " + key);
                 }
             }
 
-            allProperties.push(feature.properties = extractedProps);
+            allProperties.push(feature.properties = extractedProperties);
 
-            saveGeojson(getFeatureGeojsonName(feature.properties), feature);
+            saveGeojson(getFeatureGeojsonName(extractedProperties), feature);
         }
         if (getNewSourceGeojsonName !== undefined) {
-            saveGeojson(getNewSourceGeojsonName(allProperties), sourceJson);
+            saveGeojson(getNewSourceGeojsonName(extractedProperties), sourceJson);
         }
     }
 
@@ -138,8 +139,8 @@ extract(
     (properties: any) => {
         return `region_${properties.id}`;
     },
-    (allProperties: any) => {
-        return `regions_${allProperties[0].countryId}`;
+    (properties: any) => {
+        return `regions_${properties.countryId}`;
     },
 );
 
@@ -164,8 +165,8 @@ extract(
     (properties: any) => {
         return `province_${properties.id}`;
     },
-    (allProperties: any) => {
-        return `provinces_${allProperties[0].regionId}`;
+    (properties: any) => {
+        return `provinces_${properties.regionId}`;
     },
 );
 
@@ -190,7 +191,7 @@ extract(
     (properties: any) => {
         return `municity_${properties.id}`;
     },
-    (allProperties: any) => {
-        return `municities_${allProperties[0].provinceId}`;
+    (properties: any) => {
+        return `municities_${properties.provinceId}`;
     },
 );
