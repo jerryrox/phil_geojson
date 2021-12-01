@@ -131,7 +131,7 @@ extract(
             name: prop.ADM1_EN,
             altName: prop.ADM1ALT1EN ?? "",
             center: getCenterPoint(feature.geometry.coordinates),
-            provincesUrl: getHostedGeojsonUrl(`provinces_${countryId}`),
+            provincesUrl: getHostedGeojsonUrl(`provinces_${id}`),
             geojsonUrl: getHostedGeojsonUrl(`region_${id}`),
         };
     },
@@ -139,7 +139,7 @@ extract(
         return `region_${properties.id}`;
     },
     (allProperties: any) => {
-        return `provinces_${allProperties[0].countryId}`;
+        return `regions_${allProperties[0].countryId}`;
     },
 );
 
@@ -157,7 +157,7 @@ extract(
             countryId: prop.ADM0_PCODE,
             regionId,
             center: getCenterPoint(feature.geometry.coordinates),
-            municitiesUrl: getHostedGeojsonUrl(`municities_${regionId}`),
+            municitiesUrl: getHostedGeojsonUrl(`municities_${id}`),
             geojsonUrl: getHostedGeojsonUrl(`province_${id}`),
         };
     },
@@ -165,7 +165,7 @@ extract(
         return `province_${properties.id}`;
     },
     (allProperties: any) => {
-        return `municities_${allProperties[0].regionId}`;
+        return `provinces_${allProperties[0].regionId}`;
     },
 );
 
@@ -189,5 +189,8 @@ extract(
     },
     (properties: any) => {
         return `municity_${properties.id}`;
+    },
+    (allProperties: any) => {
+        return `municities_${allProperties[0].provinceId}`;
     },
 );
