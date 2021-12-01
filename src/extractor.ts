@@ -89,8 +89,8 @@ function extract(
     files: string[],
     propFileName: string,
     extractProperties: (feature: any) => any,
-    getNewSourceGeojsonName: (allProperties: any) => string,
     getFeatureGeojsonName: (properties: any) => string,
+    getNewSourceGeojsonName?: (allProperties: any) => string,
 ) {
     const allProperties: Record<string, any>[] = [];
 
@@ -110,7 +110,9 @@ function extract(
 
             saveGeojson(getFeatureGeojsonName(feature.properties), feature);
         }
-        saveGeojson(getNewSourceGeojsonName(allProperties), sourceJson);
+        if (getNewSourceGeojsonName !== undefined) {
+            saveGeojson(getNewSourceGeojsonName(allProperties), sourceJson);
+        }
     }
 
     saveProperties(propFileName, allProperties);
@@ -129,15 +131,15 @@ extract(
             name: prop.ADM1_EN,
             altName: prop.ADM1ALT1EN ?? "",
             center: getCenterPoint(feature.geometry.coordinates),
-            regionsUrl: getHostedGeojsonUrl(`regions_${countryId}`),
+            provincesUrl: getHostedGeojsonUrl(`provinces_${countryId}`),
             geojsonUrl: getHostedGeojsonUrl(`region_${id}`),
         };
     },
-    (allProperties: any) => {
-        return `regions_${allProperties[0].countryId}`;
-    },
     (properties: any) => {
         return `region_${properties.id}`;
+    },
+    (allProperties: any) => {
+        return `provinces_${allProperties[0].countryId}`;
     },
 );
 
@@ -155,15 +157,15 @@ extract(
             countryId: prop.ADM0_PCODE,
             regionId,
             center: getCenterPoint(feature.geometry.coordinates),
-            regionsUrl: getHostedGeojsonUrl(`provinces_${regionId}`),
+            municitiesUrl: getHostedGeojsonUrl(`municities_${regionId}`),
             geojsonUrl: getHostedGeojsonUrl(`province_${id}`),
         };
     },
-    (allProperties: any) => {
-        return `provinces_${allProperties[0].regionId}`;
-    },
     (properties: any) => {
         return `province_${properties.id}`;
+    },
+    (allProperties: any) => {
+        return `municities_${allProperties[0].regionId}`;
     },
 );
 
@@ -182,12 +184,8 @@ extract(
             regionId: prop.ADM1_PCODE,
             provinceId,
             center: getCenterPoint(feature.geometry.coordinates),
-            regionsUrl: getHostedGeojsonUrl(`municities_${provinceId}`),
             geojsonUrl: getHostedGeojsonUrl(`municity_${id}`),
         };
-    },
-    (allProperties: any) => {
-        return `municities_${allProperties[0].provinceId}`;
     },
     (properties: any) => {
         return `municity_${properties.id}`;
